@@ -17,6 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [application setStatusBarStyle:UIStatusBarStyleBlackTranslucent];
+    [application setStatusBarHidden:YES animated:NO];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[IpocalypseViewController alloc] initWithNibName:@"IpocalypseViewController" bundle:nil];
