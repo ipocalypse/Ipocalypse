@@ -1,9 +1,9 @@
 //
-//  IpocalypseAppDelegate.m
-//  Ipocalypse
+// IpocalypseAppDelegate.m
+// Ipocalypse
 //
-//  Created by Grif on 11/5/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+// Created by Grif Priest on 9/9/11.
+// Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
 #import "IpocalypseAppDelegate.h"

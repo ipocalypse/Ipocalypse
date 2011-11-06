@@ -1,9 +1,9 @@
 //
-//  MainViewController.m
-//  Yorient
+// IpocalypseViewController.m
+// Ipocalypse
 //
-//  Created by P. Mark Anderson on 11/10/09.
-//  Copyright Spot Metrix, Inc 2009. All rights reserved.
+// Created by Grif Priest on 9/9/11.
+// Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 #define IpocQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0) 
 #define IpocURL [NSURL URLWithString: @"http://www.grif.tv/json.php"] 
