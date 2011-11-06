@@ -39,7 +39,7 @@
 		8679B6431465FCCD00027A3B /* refresh_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8679B6411465FCCD00027A3B /* refresh_button.png */; };
 		8679B6441465FCCD00027A3B /* refresh_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8679B6421465FCCD00027A3B /* refresh_button@2x.png */; };
 		8679B6471465FDBB00027A3B /* BirdseyeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8679B6461465FDBB00027A3B /* BirdseyeView.m */; };
-		8679B64E1466001E00027A3B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8679B64D1466001E00027A3B /* AudioToolbox.framework */; };
+		868ED9F314666E8C0036FC74 /* zombie.png in Resources */ = {isa = PBXBuildFile; fileRef = 868ED9F214666E8C0036FC74 /* zombie.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,7 +83,7 @@
 		8679B6451465FDBB00027A3B /* BirdseyeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BirdseyeView.h; sourceTree = "<group>"; };
 		8679B6461465FDBB00027A3B /* BirdseyeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirdseyeView.m; sourceTree = "<group>"; };
 		8679B64C1465FF2000027A3B /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		8679B64D1466001E00027A3B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		868ED9F214666E8C0036FC74 /* zombie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombie.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +91,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8679B64E1466001E00027A3B /* AudioToolbox.framework in Frameworks */,
 				8679B63C1465FB6A00027A3B /* CoreMotion.framework in Frameworks */,
 				8679B6371465FB5600027A3B /* CoreLocation.framework in Frameworks */,
 				8679B6381465FB5600027A3B /* MapKit.framework in Frameworks */,
@@ -110,6 +109,7 @@
 		8679B5E11465FA1A00027A3B = {
 			isa = PBXGroup;
 			children = (
+				868ED9F214666E8C0036FC74 /* zombie.png */,
 				8679B60D1465FB1800027A3B /* 3DAR */,
 				8679B5F61465FA1A00027A3B /* Ipocalypse */,
 				8679B5EF1465FA1A00027A3B /* Frameworks */,
@@ -128,7 +128,6 @@
 		8679B5EF1465FA1A00027A3B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8679B64D1466001E00027A3B /* AudioToolbox.framework */,
 				8679B63B1465FB6A00027A3B /* CoreMotion.framework */,
 				8679B6331465FB5600027A3B /* CoreLocation.framework */,
 				8679B6341465FB5600027A3B /* MapKit.framework */,
@@ -295,6 +294,7 @@
 				8679B6321465FB1800027A3B /* SM3DAR_keys.txt in Resources */,
 				8679B6431465FCCD00027A3B /* refresh_button.png in Resources */,
 				8679B6441465FCCD00027A3B /* refresh_button@2x.png in Resources */,
+				868ED9F314666E8C0036FC74 /* zombie.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
