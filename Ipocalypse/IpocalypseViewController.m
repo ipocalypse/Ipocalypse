@@ -46,7 +46,7 @@
 @implementation IpocalypseViewController
 
 @synthesize mapView;
-
+@synthesize locationManager;
 
 - (void)dealloc 
 {    
@@ -83,6 +83,40 @@
         NSData* data = [NSData dataWithContentsOfURL: IpocURL];
         [self performSelectorOnMainThread:@selector(fetchedData:) withObject:data waitUntilDone:YES];
     });
+    
+    [NSThread detachNewThreadSelector:@selector(UploadUserLocation:) toTarget:self withObject:nil];
+    
+}
+-(void) UploadUserLocation:(id)anObject {
+    
+    
+    NSAutoreleasePool *autoreleasepool = [[NSAutoreleasePool alloc] init];
+    
+    for (int i=0; i<1000000; i++){
+        
+        // Upload UID, LAT, and LONG to server
+        locationManager = [[CLLocationManager alloc] init];
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+        locationManager.distanceFilter = kCLDistanceFilterNone;
+        [locationManager startUpdatingLocation];
+        
+        CLLocation *location = [locationManager location];
+        CLLocationCoordinate2D coordinate = [location coordinate];
+        
+        
+        NSString *Latitude = [NSString stringWithFormat:@"%f", coordinate.latitude];
+        NSString *Longitude = [NSString stringWithFormat:@"%f", coordinate.longitude];
+        NSString *Uid = [[UIDevice currentDevice] uniqueIdentifier];
+        NSString *post = [NSString stringWithFormat:@"http://www.grif.tv/add2.php?Uid=%@&Latitude=%@&Longitude=%@", Uid, Latitude, Longitude];
+        [NSData dataWithContentsOfURL:[NSURL URLWithString:post]];
+        [NSThread sleepForTimeInterval:5.0];
+    }
+    [NSThread exit];
+    
+    //we need to do this to prevent memory leaks
+    
+    [autoreleasepool release];
+    
 }
 - (void)fetchedData:(NSData *)responseData {
     
@@ -100,7 +134,7 @@
     for (int i=0; i<[locations count]; i++){
         corde.latitude = [[[locations objectAtIndex:i] valueForKey:@"Latitude"]floatValue];
         corde.longitude = [[[locations objectAtIndex:i] valueForKey:@"Longitude"]floatValue];
-   //     NSString *Name = [[locations valueForKey:@"Name"]objectAtIndex:i];
+  //      NSString *Name = [[locations valueForKey:@"Name"]objectAtIndex:i];
         
         
         
