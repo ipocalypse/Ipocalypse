@@ -28,8 +28,6 @@
 
 @property (nonatomic, retain) IBOutlet SM3DARMapView *mapView;
 @property (nonatomic, retain) CLLocationManager *locationManager;
-- (void)initSound;
-- (void)playFocusSound;
 - (IBAction) refreshButtonTapped;
 
 @end
