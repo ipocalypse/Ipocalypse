@@ -100,7 +100,7 @@
     for (int i=0; i<[locations count]; i++){
         corde.latitude = [[[locations objectAtIndex:i] valueForKey:@"Latitude"]floatValue];
         corde.longitude = [[[locations objectAtIndex:i] valueForKey:@"Longitude"]floatValue];
-        NSString *Name = [[locations valueForKey:@"Name"]objectAtIndex:i];
+   //     NSString *Name = [[locations valueForKey:@"Name"]objectAtIndex:i];
         
         
         
