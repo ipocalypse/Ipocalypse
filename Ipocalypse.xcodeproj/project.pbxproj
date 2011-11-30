@@ -29,7 +29,6 @@
 		8679B62E1465FB1800027A3B /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = 8679B61C1465FB1800027A3B /* sphere.obj */; };
 		8679B62F1465FB1800027A3B /* star.obj in Resources */ = {isa = PBXBuildFile; fileRef = 8679B61D1465FB1800027A3B /* star.obj */; };
 		8679B6301465FB1800027A3B /* ufo.obj in Resources */ = {isa = PBXBuildFile; fileRef = 8679B61E1465FB1800027A3B /* ufo.obj */; };
-		8679B6311465FB1800027A3B /* lib3DAR_v2_1_3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8679B6201465FB1800027A3B /* lib3DAR_v2_1_3.a */; };
 		8679B6321465FB1800027A3B /* SM3DAR_keys.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8679B6221465FB1800027A3B /* SM3DAR_keys.txt */; };
 		8679B6371465FB5600027A3B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8679B6331465FB5600027A3B /* CoreLocation.framework */; };
 		8679B6381465FB5600027A3B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8679B6341465FB5600027A3B /* MapKit.framework */; };
@@ -40,6 +39,7 @@
 		8679B6441465FCCD00027A3B /* refresh_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8679B6421465FCCD00027A3B /* refresh_button@2x.png */; };
 		8679B6471465FDBB00027A3B /* BirdseyeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8679B6461465FDBB00027A3B /* BirdseyeView.m */; };
 		868ED9F314666E8C0036FC74 /* zombie.png in Resources */ = {isa = PBXBuildFile; fileRef = 868ED9F214666E8C0036FC74 /* zombie.png */; };
+		86C016461486DD70006715A0 /* lib3DAR_v2_2_rc1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C016451486DD70006715A0 /* lib3DAR_v2_2_rc1.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,7 +70,6 @@
 		8679B61C1465FB1800027A3B /* sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere.obj; sourceTree = "<group>"; };
 		8679B61D1465FB1800027A3B /* star.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = star.obj; sourceTree = "<group>"; };
 		8679B61E1465FB1800027A3B /* ufo.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ufo.obj; sourceTree = "<group>"; };
-		8679B6201465FB1800027A3B /* lib3DAR_v2_1_3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = lib3DAR_v2_1_3.a; sourceTree = "<group>"; };
 		8679B6211465FB1800027A3B /* SM3DAR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SM3DAR.h; sourceTree = "<group>"; };
 		8679B6221465FB1800027A3B /* SM3DAR_keys.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SM3DAR_keys.txt; sourceTree = "<group>"; };
 		8679B6331465FB5600027A3B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -84,6 +83,7 @@
 		8679B6461465FDBB00027A3B /* BirdseyeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirdseyeView.m; sourceTree = "<group>"; };
 		8679B64C1465FF2000027A3B /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		868ED9F214666E8C0036FC74 /* zombie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombie.png; sourceTree = "<group>"; };
+		86C016451486DD70006715A0 /* lib3DAR_v2_2_rc1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib3DAR_v2_2_rc1.a; path = ../../../../Downloads/lib3DAR_v2_2_rc1.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +99,7 @@
 				8679B5F51465FA1A00027A3B /* CoreGraphics.framework in Frameworks */,
 				8679B5F11465FA1A00027A3B /* UIKit.framework in Frameworks */,
 				8679B5F31465FA1A00027A3B /* Foundation.framework in Frameworks */,
-				8679B6311465FB1800027A3B /* lib3DAR_v2_1_3.a in Frameworks */,
+				86C016461486DD70006715A0 /* lib3DAR_v2_2_rc1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +220,7 @@
 		8679B61F1465FB1800027A3B /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				8679B6201465FB1800027A3B /* lib3DAR_v2_1_3.a */,
+				86C016451486DD70006715A0 /* lib3DAR_v2_2_rc1.a */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -390,6 +390,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/3DAR/Lib\"",
+					"\"$(SRCROOT)/../../Downloads\"",
 				);
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -413,6 +414,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/3DAR/Lib\"",
+					"\"$(SRCROOT)/../../Downloads\"",
 				);
 				OTHER_LDFLAGS = (
 					"-all_load",

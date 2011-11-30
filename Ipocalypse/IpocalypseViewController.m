@@ -134,32 +134,35 @@
         corde.longitude = [[[locations objectAtIndex:i] valueForKey:@"Longitude"]floatValue];
         NSString *Name = [[locations valueForKey:@"Name"]objectAtIndex:i];
         
-  
+  // with 2D pointers
         
-        CLLocation *Location = [[CLLocation alloc] initWithLatitude:corde.latitude longitude:corde.longitude];
+   //     CLLocation *Location = [[CLLocation alloc] initWithLatitude:corde.latitude longitude:corde.longitude];
         
-        SM3DARPointOfInterest *poi = [[SM3DARPointOfInterest alloc] initWithLocation:Location 
-                                                                                  title:Name
-                                                                               subtitle:nil
-                                                                                    url:nil
-                                                                             properties:nil];
-        
- //       SM3DARTexturedGeometryView *modelView = [[[SM3DARTexturedGeometryView alloc] initWithOBJ:@"star.obj" textureNamed:nil] autorelease];
- //       SM3DARTexturedGeometryView *model2View = [[[SM3DARTexturedGeometryView alloc] initWithOBJ:@"star.obj" textureNamed:nil] autorelease];
-        
-  //      SM3DARPointOfInterest *poi = (SM3DARPointOfInterest *)[[mapView.sm3dar addPointAtLatitude:corde.latitude
-  //                                                                                      longitude:corde.longitude
-  //                                                                                       altitude:0
-  //                                                                                          title:Name
-  //                                                                                           view:modelView] autorelease];
+    //    SM3DARPointOfInterest *poi = [[SM3DARPointOfInterest alloc] initWithLocation:Location 
+      //                                                                            title:Name
+     //                                                                          subtitle:nil
+       //                                                                             url:nil
+      //                                                                       properties:nil];
         
         
-  //      SM3DARPointOfInterest *poi2 = (SM3DARPointOfInterest *)[[mapView.sm3dar addPointAtLatitude:corde.latitude + 0.0002
-   //                                                                                      longitude:corde.longitude + 0.0002
-    //                                                                                      altitude:0
-     //                                                                                        title:nil
-    //                                                                                          view:model2View] autorelease];
-    //    [mapView addAnnotation:poi2];
+        // With 3D pointers
+        
+    SM3DARTexturedGeometryView *modelView = [[SM3DARTexturedGeometryView alloc] initWithOBJ:@"star.obj" textureNamed:nil];
+    SM3DARTexturedGeometryView *model2View = [[SM3DARTexturedGeometryView alloc] initWithOBJ:@"star.obj" textureNamed:nil];
+    
+    SM3DARPointOfInterest *poi = (SM3DARPointOfInterest *)[mapView.sm3dar addPointAtLatitude:corde.latitude
+                                                                                    longitude:corde.longitude
+                                                                                    altitude:0
+                                                                                    title:Name
+                                                                                    view:modelView];
+        
+        
+    SM3DARPointOfInterest *poi2 = (SM3DARPointOfInterest *)[mapView.sm3dar addPointAtLatitude:corde.latitude + 0.0002
+                                                                                longitude:corde.longitude + 0.0002
+                                                                                altitude:0
+                                                                                title:nil
+                                                                                view:model2View];
+        [mapView addAnnotation:poi2];
         [mapView addAnnotation:poi];
     }
     
