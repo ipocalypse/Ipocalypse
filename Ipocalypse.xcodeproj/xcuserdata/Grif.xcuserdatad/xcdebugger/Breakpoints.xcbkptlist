@@ -51,53 +51,13 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "Ipocalypse/IpocalypseViewController.m"
-         timestampString = "342256866.976209"
+         timestampString = "349819827.333807"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "121"
-         endingLineNumber = "121"
-         landmarkName = "-fetchedData:"
+         startingLineNumber = "110"
+         endingLineNumber = "110"
+         landmarkName = "-UploadUserLocation:"
          landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "Ipocalypse/IpocalypseViewController.m"
-         timestampString = "342256732.596039"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "41"
-         endingLineNumber = "41"
-         landmarkName = "@interface IpocalypseViewController(Private)"
-         landmarkType = "2">
-         <Locations>
-            <Location
-               shouldBeEnabled = "Yes"
-               ignoreCount = "0"
-               continueAfterRunningActions = "No"
-               symbolName = "-[IpocalypseViewController mapView]"
-               urlString = "file://localhost/Users/Grif/Desktop/Ipocalypse/Ipocalypse/IpocalypseViewController.m"
-               timestampString = "342256867.279952"
-               startingColumnNumber = "9223372036854775807"
-               endingColumnNumber = "9223372036854775807"
-               startingLineNumber = "47"
-               endingLineNumber = "47">
-            </Location>
-            <Location
-               shouldBeEnabled = "Yes"
-               ignoreCount = "0"
-               continueAfterRunningActions = "No"
-               symbolName = "-[IpocalypseViewController setMapView:]"
-               urlString = "file://localhost/Users/Grif/Desktop/Ipocalypse/Ipocalypse/IpocalypseViewController.m"
-               timestampString = "342256867.280223"
-               startingColumnNumber = "9223372036854775807"
-               endingColumnNumber = "9223372036854775807"
-               startingLineNumber = "47"
-               endingLineNumber = "47">
-            </Location>
-         </Locations>
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>
