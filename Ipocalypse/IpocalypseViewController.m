@@ -4,7 +4,7 @@
 // Change
 // Created by Grif Priest on 9/9/11.
 // Copyright 2011 __MyCompanyName__. All rights reserved.
-//biiiiitch
+//biiiiiitch
 #define IpocQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0) 
 #define IpocURL [NSURL URLWithString: @"http://www.grif.tv/json.php"] 
 #define IDEAL_LOCATION_ACCURACY 10.0
